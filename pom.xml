@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qunit-reporter-junit</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2-SNAPSHOT</version>
     <name>JUnit Reporter for QUnit</name>
     <description>WebJar for JUnit Reporter for QUnit</description>
     <url>http://webjars.org</url>
@@ -54,7 +54,7 @@
         <url>http://github.com/webjars/qunit-reporter-junit</url>
         <connection>scm:git:https://github.com/webjars/qunit-reporter-junit.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/qunit-reporter-junit.git</developerConnection>
-        <tag>qunit-reporter-junit-1.1.1</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
