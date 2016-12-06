@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qunit-reporter-junit</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.1.1</version>
     <name>JUnit Reporter for QUnit</name>
     <description>WebJar for JUnit Reporter for QUnit</description>
     <url>http://webjars.org</url>
@@ -54,7 +54,7 @@
         <url>http://github.com/webjars/qunit-reporter-junit</url>
         <connection>scm:git:https://github.com/webjars/qunit-reporter-junit.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/qunit-reporter-junit.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>qunit-reporter-junit-1.1.1</tag>
     </scm>
     
     <dependencies>
@@ -91,12 +91,12 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
-                                <move file="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/qunit-reporter-junit.js" todir="${destDir}"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
+                                <move file="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/qunit-reporter-junit.js" todir="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
