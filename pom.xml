@@ -25,7 +25,7 @@
 		<requirejs>
             {
                 "paths": {
-                    "qunit-reporter-junit": "qunit-reporter-junit-1.1.1"
+                    "qunit-reporter-junit": "qunit-reporter-junit"
                 },
                 "shim": {
                     "qunit-reporter-junit": [ "qunit" ]
